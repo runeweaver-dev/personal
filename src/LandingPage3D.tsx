@@ -1,55 +1,52 @@
-import React, {useEffect, useState} from 'react';
-import * as THREE from 'three';
-import { PerspectiveCamera } from 'three';
+import React, {useEffect, useRef, useState} from 'react';
+import { Canvas, MeshProps, useFrame } from '@react-three/fiber';
+import './LandingPage3D.scss';
 
-interface ThreeConfig {
-    scene: THREE.Scene,
-    camera: THREE.Camera,
-    renderer: THREE.WebGLRenderer
+interface Coordinates {
+    x: number
 }
 
-interface Props {
-    contents: ThreeConfig | null
+interface RefProps {
+    rotation : Coordinates
 }
 
-function SceneContainer(props: Props){
-    if(!props.contents) return (<>{"Loading..."}</>);
-
-    const config = props.contents as ThreeConfig;
-
-    return (<>{config.renderer.domElement}</>);
+function Box(props: any) {
+  // This reference gives us direct access to the THREE.Mesh object
+  
+  const ref = useRef<RefProps>({
+    rotation: {
+        x: 0
+    }
+  })
+  // Hold state for hovered and clicked events
+  const [hovered, hover] = useState(false)
+  const [clicked, click] = useState(false)
+  // Subscribe this component to the render-loop, rotate the mesh every frame
+  useFrame((state, delta) => (ref.current.rotation.x += 0.01))
+  // Return the view, these are regular Threejs elements expressed in JSX
+  return (
+    <mesh
+      {...props}
+      ref={ref}
+      scale={clicked ? 1.5 : 1}
+      onClick={(event) => click(!clicked)}
+      onPointerOver={(event) => hover(true)}
+      onPointerOut={(event) => hover(false)}>
+      <boxGeometry args={[1, 1, 1]} />
+      <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
+    </mesh>
+  )
 }
 
-function LandingPage3D(){
-
-    const [props, setProps] =
-        useState<Props>({
-            contents: null
-        });
-
-    (async() => {
-        const myScene = new THREE.Scene();
-        const myCamera = new THREE.PerspectiveCamera(
-            75,
-            window.innerWidth / window.innerHeight,
-            0.1,
-            1000
-        );
-        const myRenderer = new THREE.WebGLRenderer();
-        myRenderer.setSize(window.innerWidth, window.innerHeight);
-        setProps(
-            {
-            contents: {
-                scene : myScene,
-                camera : myCamera,
-                renderer : myRenderer
-            }
-        } as Props)
-    })()
+function LandingPage3D() {
 
     return (
         <div className="LandingPage3D">
-            <SceneContainer {...props} />
+            <Canvas>
+                <ambientLight />
+                <pointLight position={[10, 10, 10]} />
+                <Box position={[-1.2, 0, 0]} />
+            </Canvas>
         </div>
     )
 }
