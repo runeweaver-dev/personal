@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.scss';
-import LandingPage3D from './LandingPage3D';
+import Menu from './components/Menu';
 
 function App() {
   return (
     <div className="App">
-      <LandingPage3D />
+      <Menu />
     </div>
   );
 }
