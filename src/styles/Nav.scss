@@ -1,0 +1,26 @@
+@import "../variables.scss";
+@import "../fonts.scss";
+
+.Nav {
+    ul {
+        list-style: none;
+        padding-left: 0;
+        
+        li {
+            text-align: center;
+            padding: $padding-factor;
+            margin-bottom: $padding-factor;
+
+            font-family: $main-font;
+            font-size: 1.5rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:hover {
+                color: $pink;
+            }
+        }
+    }
+}

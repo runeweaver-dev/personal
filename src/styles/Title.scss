@@ -21,9 +21,10 @@
         border-radius: 50%;
         border: solid 2px $purple;
 
-        h1 {
+        > .fullName {
             font-family: $handwritten-heading;
             font-size: 1.8rem;
+            color: black;
             margin-bottom: 0;
         }
 
@@ -33,10 +34,11 @@
             color: $pink;
         }
 
-        h2 {
+        > .subTitle {
             font-family: $main-font;
             font-size: 1.2rem;
             margin-top: 0;
+            color: black;
         }
     }
 }
