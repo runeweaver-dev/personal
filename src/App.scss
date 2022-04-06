@@ -1,8 +1,12 @@
+@import './variables.scss';
+
 .App {
   height: 100%;
 
   display: flex;
   justify-content: space-between;
+
+  margin-left: $menu-width;
 }
 
 .mobile {
