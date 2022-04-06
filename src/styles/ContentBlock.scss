@@ -1,0 +1,36 @@
+@import '../fonts.scss';
+@import '../variables.scss';
+
+.ContentBlock {
+    background: rgba(25,25,25,0.5);
+    color: white;
+    font-family: $main-font;
+    padding: $padding-factor;
+    max-width: 33%;
+
+    .contentBlockHeader {
+        position: relative;
+        padding: $padding-factor;
+        background-color: rgb(25,25,25);
+
+        > h3 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        > p {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: $padding-factor;
+            margin: 0;
+            font-style: italic;
+
+            font-size: 0.8rem;
+        }
+    }
+
+    .contentBlockContent {
+        padding: $padding-factor*2 $padding-factor;
+    }
+}
