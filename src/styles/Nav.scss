@@ -3,24 +3,16 @@
 
 .Nav {
     ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         list-style: none;
-        padding-left: 0;
-        
+
         li {
-            text-align: center;
-            padding: $padding-factor;
-            margin-bottom: $padding-factor;
-
-            font-family: $main-font;
-            font-size: 1.5rem;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-
-            &:hover {
-                color: $pink;
-            }
+            padding: $padding-factor $padding-factor * 2;
+            text-transform: uppercase;
+            letter-spacing: 0.50rem;
         }
     }
 }

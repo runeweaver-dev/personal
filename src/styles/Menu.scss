@@ -1,14 +1,4 @@
 @import '../variables.scss';
 
 .Menu {
-    height: 100%;
-    width: $menu-width;
-    max-width: 20%;
-    padding: 15px 0 0 0;
-    position: absolute;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
 }

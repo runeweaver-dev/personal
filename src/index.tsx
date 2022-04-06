@@ -9,7 +9,6 @@ import { BrowserRouter } from 'react-router-dom';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Menu />
       <App />
     </BrowserRouter>
   </React.StrictMode>,
