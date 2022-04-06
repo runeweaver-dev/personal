@@ -1,0 +1,42 @@
+@import '../fonts.scss';
+@import '../variables.scss';
+
+.Title {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+    .textArea {
+
+        $textAreaSize: $menu-width - ($padding-factor * 5);
+
+        display: flex;
+        height: $textAreaSize;
+        width: $textAreaSize;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 50%;
+        border: solid 2px $purple;
+
+        h1 {
+            font-family: $handwritten-heading;
+            font-size: 1.8rem;
+            margin-bottom: 0;
+        }
+
+        hr {
+            width: 80%;
+            margin: ($padding-factor * .5) 0;
+            color: $pink;
+        }
+
+        h2 {
+            font-family: $main-font;
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+    }
+}
