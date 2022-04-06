@@ -1,7 +1,7 @@
 import react from 'react';
 import InnerHeader from './InnerHeader';
-import '../styles/Header.scss';
 import NameSection from './NameSection';
+import '../styles/Header.scss';
 
 function Header(){
     return (

@@ -1,0 +1,9 @@
+@import '../variables.scss';
+
+.Page {
+    padding: $padding-factor;
+    background-color: $purple;
+    height: 75%;
+    z-index: 0;
+    position: relative;
+}
