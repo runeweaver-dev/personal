@@ -1,0 +1,19 @@
+@import "../../../variables.scss";
+@import "../../../fonts.scss";
+
+.Nav {
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        list-style: none;
+
+        li {
+            padding: $padding-factor $padding-factor * 2;
+            text-transform: uppercase;
+            letter-spacing: 0.50rem;
+            font-weight: 500;
+        }
+    }
+}

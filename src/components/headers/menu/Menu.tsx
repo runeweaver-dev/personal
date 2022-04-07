@@ -1,6 +1,6 @@
 import react from 'react';
+import Nav from '../nav/Nav';
 import '../styles/Menu.scss';
-import Nav from './Nav';
 
 function Menu(){
     return (

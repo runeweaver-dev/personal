@@ -1,5 +1,5 @@
 import react from 'react';
-import '../styles/ContentBlock.scss';
+import './ContentBlock.scss';
 
 function ContentBlock(props: IContentBlockProps){
     return (

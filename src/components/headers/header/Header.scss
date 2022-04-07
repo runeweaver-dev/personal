@@ -1,0 +1,8 @@
+@import '../../../variables.scss';
+
+.Header {
+    height: 20%;
+    box-shadow: 0 -10px 10px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    position: relative;
+}

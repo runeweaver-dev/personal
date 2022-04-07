@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import '../styles/Nav.scss';
-import RouteConfig from '../config/RouteConfig';
+import './Nav.scss';
+import RouteConfig, { IIndividualRouteConfig } from '../../../config/RouteConfig';
 
 function mouseEnterAnimation(e: React.MouseEvent){
     const thisLi = e.target as HTMLAnchorElement;
@@ -30,7 +30,7 @@ function Nav (){
             <nav>
                 <ul>
                     {
-                        RouteConfig.map(route => (
+                        RouteConfig.map((route: IIndividualRouteConfig): JSX.Element => (
                             <li>
                                 <Link to={route.path} {...linkProperties} style={linkStyles}>{route.text}</Link>
                             </li>

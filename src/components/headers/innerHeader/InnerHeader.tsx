@@ -1,6 +1,6 @@
 import react from 'react';
-import Nav from './Nav';
-import '../styles/InnerHeader.scss';
+import Nav from '../nav/Nav';
+import './InnerHeader.scss';
 
 function InnerHeader(){
     return (

@@ -1,5 +1,5 @@
 import react from 'react';
-import '../styles/NameSection.scss';
+import './NameSection.scss';
 
 function NameSection(){
     return (

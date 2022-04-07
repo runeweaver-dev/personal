@@ -1,6 +1,6 @@
-import '../styles/Home.scss';
-import { IContentBlockProps } from './ContentBlock';
-import ContentBlockContainer, { IContentBlockContainerProps } from './ContentBlockContainer';
+import { IContentBlockProps } from '../../contentBlocks/contentBlock/ContentBlock';
+import ContentBlockContainer, { IContentBlockContainerProps } from '../../contentBlocks/contentBlockContainer/ContentBlockContainer';
+import './Home.scss';
 
 const homeBlockContent: IContentBlockProps = {
     header: "Understanding State Machines",
