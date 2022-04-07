@@ -1,6 +1,5 @@
-import react from 'react';
 import '../styles/Home.scss';
-import ContentBlock, { IContentBlockProps } from './ContentBlock';
+import { IContentBlockProps } from './ContentBlock';
 import ContentBlockContainer, { IContentBlockContainerProps } from './ContentBlockContainer';
 
 const homeBlockContent: IContentBlockProps = {

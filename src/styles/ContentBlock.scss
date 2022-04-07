@@ -2,16 +2,22 @@
 @import '../variables.scss';
 
 .ContentBlock {
-    background: rgba(25,25,25,0.5);
+    background: rgba(25,25,25,0.75);
     color: white;
     font-family: $main-font;
     padding: $padding-factor;
     max-width: 33%;
 
+    margin-bottom: $padding-factor;
+
     .contentBlockHeader {
         position: relative;
         padding: $padding-factor;
         background-color: rgb(25,25,25);
+        border-left: $padding-factor solid $pink;
+        border-bottom: $padding-factor solid $cyan;
+        border-top: $padding-factor solid rgb(25,25,25);
+        border-right: $padding-factor solid rgb(25,25,25);
 
         > h3 {
             font-size: 2rem;

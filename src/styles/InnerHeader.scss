@@ -11,12 +11,14 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        padding-left: $padding-factor*2;
 
         h2 {
             text-transform: uppercase;
             font-family: $main-font;
             font-size: 1rem;
             letter-spacing: 0.50rem;
+            text-align: center;
         }
     }
 }
