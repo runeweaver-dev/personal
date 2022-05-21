@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Repos from './Repos';
 import '../styles/Home.scss';
 import { IContentBlockProps } from './ContentBlock';
 import ContentBlockContainer, { IContentBlockContainerProps } from './ContentBlockContainer';
@@ -23,37 +24,10 @@ const contentBlockContainerProps = {
 } as IContentBlockContainerProps;
 
 function Home(){
-    const [githubData, setGithubData] = useState([]);
-    const [repos, setRepos] = useState([]);
-    const [error, setError] : any = useState(null);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        async function getGithubData(){
-            try {
-                const response = await fetch("https://api.github.com/users/runeweaver-dev/repos");
-                const json = await response.json();
-                console.log(json);
-                setRepos(json);
-            }catch(e){
-                setError(e)
-            }finally{
-                setLoading(false)
-            }
-        }
-        getGithubData();
-    }, []);
-
-    if(error){
-        return (<h1>Could not load repos</h1>);
-    } 
-
     return (
         <div className="Page Home">
             <ContentBlockContainer {...contentBlockContainerProps} />
-            <div>
-                
-            </div>
+            <Repos />
         </div>
     )
 }
