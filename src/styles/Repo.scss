@@ -7,6 +7,12 @@
   margin: $padding-factor 0;
   position: relative;
 
+  h3 {
+    font-family: $handwritten-heading;
+    margin: 0 auto $padding-factor / 2;
+    font-size: 1.5rem;
+  }
+
   .language-banner {
     position: absolute;
     top: 0;
@@ -17,7 +23,12 @@
     padding: $padding-factor;
   }
 
-  h3 {
-    font-family: $handwritten-heading;
+  .repo-container {
+    padding: ($padding-factor / 2) ($padding-factor / 2);
+    > p {
+      margin-top: 0;
+      font-style: italic;
+    }
   }
+
 }

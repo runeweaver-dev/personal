@@ -17,9 +17,11 @@ function Repo({ repoData } : { repoData : any}){
     <div className="Repo">
       <h3>{formatName(repoData.name)}</h3>
       <h4 className="language-banner">{repoData.language}</h4>
-      <p>{repoData.description}</p>
-      <div>
-        <CommitData {...repoData.name} />
+      <div className="repo-container">
+        <p>{repoData.description}</p>
+        <div>
+          <CommitData {...repoData.name} />
+        </div>
       </div>
     </div>
   )
