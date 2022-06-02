@@ -1,5 +1,6 @@
 import React from 'react';
 import useGitFetch from '../services/useGitFetch';
+import Repo from './Repo';
 
 function Repos(){
   
@@ -19,16 +20,14 @@ function Repos(){
   repos = repos.slice(0, 3);
   console.log(repos)
 
-  return (<>
-
-    {repos.map((repo) => (
-      <>
-        <div>{repo["name"]}</div>
-        <div>{repo["description"]}</div>
-      </>
-    ))}
-
-  </>)
+  return (
+    <div className="Repos">
+      <h2>Recently Updated Projects</h2>
+      {repos.map((repo) => (
+        <Repo repoData={repo} />
+      ))}
+    </div>
+  )
 }
 
 export default Repos;
