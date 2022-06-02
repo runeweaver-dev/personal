@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
-function useCommitFetch(){
+function useCommitFetch(repo: string){
 
   const [commits, setCommits] = useState([]);
   const [error, setError] : any = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function getGithubData(){
+    async function getGithubData(repo: string){
       try {
-        const response = await fetch("https://api.github.com/repos/runeweaver-dev/personal/commits");         
+        const response = await fetch(`https://api.github.com/repos/runeweaver-dev/${repo}/commits`);         
         const json = await response.json();
         setCommits(json);
       }catch(e){
@@ -18,7 +18,7 @@ function useCommitFetch(){
         setLoading(false)
       }
     }
-    getGithubData();
+    getGithubData(repo);
   }, []);
 
   return { commits, loading, error };

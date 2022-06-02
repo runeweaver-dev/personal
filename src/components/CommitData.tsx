@@ -1,10 +1,13 @@
 import React from 'react';
 import useCommitFetch from '../services/useCommitFetch';
+import Commit from './Commit';
 import '../styles/CommitData.scss';
 
-function CommitData(repoName: string){
+function CommitData({ repoName } : { repoName: string }){
 
-  let { commits, loading, error } = useCommitFetch();
+  console.log(repoName);
+
+  let { commits, loading, error } = useCommitFetch(repoName);
 
   if(error){
     return (<div>Commits unavailable</div>)
@@ -21,8 +24,7 @@ function CommitData(repoName: string){
       <div className="commits-wrapper">
       {
       commits.map((commit: any) => {
-          console.log(commit);
-          return <p>{ commit["commit"]["message"]}</p>
+          return <Commit {...commit} />
           })
       }   
       </div>

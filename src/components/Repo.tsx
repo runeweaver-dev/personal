@@ -20,7 +20,7 @@ function Repo({ repoData } : { repoData : any}){
       <div className="repo-container">
         <p>{repoData.description}</p>
         <div>
-          <CommitData {...repoData.name} />
+          <CommitData repoName={repoData.name} />
         </div>
       </div>
     </div>
