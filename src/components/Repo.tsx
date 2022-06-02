@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Repo.scss';
 
 function Repo({ repoData } : { repoData : any}){
 
@@ -16,7 +17,6 @@ function Repo({ repoData } : { repoData : any}){
       <h3>{formatName(repoData.name)}</h3>
       <h4>Main Language: {repoData.language}</h4>
       <p><strong>Description: </strong>{repoData.description}</p>
-      
     </div>
   )
 }
