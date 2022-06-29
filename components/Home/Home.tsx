@@ -1,10 +1,11 @@
-import Intro from './Intro';
-import '../styles/Home.scss';
-import Repos from './Repos';
+import Intro from '../Intro/Intro';
+import Repos from '../Repos/Repos';
+
+import styles from './Home.module.scss';
 
 function Home(){
     return (
-        <div className="Page Home">
+        <div className={styles.Home}>
             <Intro />
             <Repos />
         </div>

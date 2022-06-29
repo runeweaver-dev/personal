@@ -1,10 +1,10 @@
-import Nav from './Nav';
-import '../styles/InnerHeader.scss';
+import Nav from '../Nav/Nav';
+import styles from './InnerHeader.module.scss';
 
 function InnerHeader(){
     return (
-        <div className="InnerHeader">
-            <div className="role">
+        <div className={styles.InnerHeader}>
+            <div className={styles.role}>
                 <h2>Full-Stack Developer</h2>
             </div>
             <Nav />

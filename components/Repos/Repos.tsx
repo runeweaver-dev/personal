@@ -1,6 +1,6 @@
-import useGitFetch from '../services/useGitFetch';
-import Repo from './Repo';
-import '../styles/Repos.scss';
+import useGitFetch from '../../services/useGitFetch';
+import Repo from '../Repo/Repo';
+import styles from './Repos.module.scss';
 
 function Repos(){
   
@@ -15,7 +15,7 @@ function Repos(){
   }
 
   return (
-    <div className="Repos">
+    <div className={styles.Repos}>
       <h2>Projects</h2>
       {repos.map((repo) => (
         <Repo repoData={repo} />

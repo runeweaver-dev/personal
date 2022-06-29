@@ -1,0 +1,16 @@
+@import '../styles/variables.scss';
+
+.App {
+  height: 100%;
+  .bodyContainer {
+    background-image: url('../public/img/barcelona.jpg');
+    background-color: $purple;
+    background-size: cover;
+    background-position: center;
+
+    height: 80%;
+  }
+}
+
+.mobile {
+}

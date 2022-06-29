@@ -1,0 +1,8 @@
+@import '../../styles/Page.scss';
+
+.Home {
+    @extend .Page;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
-import CommitData from './CommitData';
-import '../styles/Repo.scss';
+import CommitData from '../CommitData/CommitData';
+import styles from './Repo.module.scss';
 
 function Repo({ repoData } : { repoData : any}){
 
@@ -14,10 +14,10 @@ function Repo({ repoData } : { repoData : any}){
   }
 
   return (
-    <div className="Repo">
+    <div className={styles.Repo}>
       <h3>{formatName(repoData.name)}</h3>
-      <h4 className="language-banner">{repoData.language}</h4>
-      <div className="repo-container">
+      <h4 className={styles.languageBanner}>{repoData.language}</h4>
+      <div className={styles.repoContainer}>
         <p>{repoData.description}</p>
         <div>
           <CommitData repoName={repoData.name} />

@@ -1,11 +1,11 @@
 import React from 'react';
-import '../styles/Commit.scss';
+import styles from './Commit.module.scss';
 
 function Commit(commit: any) {
 
   let datestamp = new Date(commit["commit"]["author"]["date"]).getTime();
 
-  function DisplayTimePassed(dateString: string){
+  function DisplayTimePassed(){
 
     let now = new Date().getTime();
 
@@ -37,8 +37,6 @@ function Commit(commit: any) {
     </>)
   }
 
-  let commitDateTime = commit["commit"]["author"]["date"];
-
   let message = commit["commit"]["message"];
 
   if(message.length > 60){
@@ -46,8 +44,8 @@ function Commit(commit: any) {
   }
 
   return (
-    <div className="Commit">
-      <DisplayTimePassed {...commitDateTime}/>
+    <div className={styles.Commit}>
+      <DisplayTimePassed />
       <p>{message}</p>
     </div>
   )

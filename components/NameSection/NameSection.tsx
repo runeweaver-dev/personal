@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import '../styles/NameSection.scss';
+import Link from 'next/link';
+import styles from './NameSection.module.scss';
 
 const linkStyles = {
     textDecoration: "none",
@@ -8,8 +8,8 @@ const linkStyles = {
 
 function NameSection(){
     return (
-        <div className="NameSection">
-            <Link to="/" style={linkStyles}>
+        <div className={styles.NameSection}>
+            <Link href="/" style={linkStyles}>
             <h1>Cameron Raw</h1>
             </Link>
             <div className="color-line"></div>

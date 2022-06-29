@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+@import '../../styles/fonts.scss';
+
+.InnerHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: $padding-factor $padding-factor * 2;
+
+    .role {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: $padding-factor*2;
+
+        @media screen and (max-width: 600px){
+            display: none;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            font-family: $main-font;
+            font-size: 1rem;
+            letter-spacing: 0.50rem;
+            text-align: center;
+        }
+    }
+}

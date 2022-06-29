@@ -1,7 +1,7 @@
 import React from 'react';
-import useCommitFetch from '../services/useCommitFetch';
-import Commit from './Commit';
-import '../styles/CommitData.scss';
+import useCommitFetch from '../../services/useCommitFetch';
+import Commit from '../Commit/Commit';
+import styles from './CommitData.module.scss';
 
 function CommitData({ repoName } : { repoName: string }){
 
@@ -17,9 +17,9 @@ function CommitData({ repoName } : { repoName: string }){
 
   commits = commits.slice(0, 3);
 
-  return (<div className="CommitData">
-      <p className="recent-commits">Recent Commits</p>
-      <div className="commits-wrapper">
+  return (<div className={styles.CommitData}>
+      <p className={styles.recentCommits}>Recent Commits</p>
+      <div>
       {
       commits.map((commit: any) => {
           return <Commit {...commit} />
