@@ -29,7 +29,10 @@ function Nav() {
             <nav>
                 <ul>
                     <li>
-                        <Link href="/about" {...linkProperties} style={linkStyles}>About</Link>
+                        <Link href="/about" style={linkStyles}><a {...linkProperties}>About</a></Link>
+                    </li>
+                    <li>
+                        <Link href="/blog" style={linkStyles}><a {...linkProperties}>Blog</a></Link>
                     </li>
                 </ul>
             </nav>
