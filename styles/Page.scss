@@ -1,0 +1,8 @@
+@import '../variables.scss';
+
+.Page {
+    padding: $padding-factor*2 $padding-factor $padding-factor;
+    height: 100%;
+    z-index: 0;
+    position: relative;
+}

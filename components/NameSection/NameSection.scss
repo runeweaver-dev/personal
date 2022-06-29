@@ -1,0 +1,38 @@
+@import '../fonts.scss';
+@import '../variables.scss';
+@import 'mixins.scss';
+
+.NameSection {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    height: 100%;
+    width: 100%;
+    
+    h1 {
+        font-family: $handwritten-heading;
+        font-size: 3rem;
+        margin: 0;
+        position: relative;
+        z-index: 10;
+    
+    }
+
+    h2 {
+        display: none;
+
+        @include full-stack-developer();
+        width: 80%;
+
+        @media screen and (max-width: 600px){
+            display: block;
+        }
+    }
+}
