@@ -8,6 +8,11 @@ $backing-size: $intro-image-size / 3.5;
 
     width: 50%;
 
+    @media screen and (max-width: 600px) {
+        height: 100vh;
+        width: 100%;
+    }
+
     > h2 {
         @include small-title;
     }
@@ -19,6 +24,10 @@ $backing-size: $intro-image-size / 3.5;
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        @media screen and (max-width: 600px) {
+            height: 90%;
+        }
 
         .introText {
             h1 {

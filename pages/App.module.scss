@@ -2,6 +2,7 @@
 
 .App {
   height: 100%;
+
   .bodyContainer {
     background-image: url('../public/img/barcelona.jpg');
     background-color: $purple;
@@ -9,6 +10,11 @@
     background-position: center;
 
     height: 80%;
+
+    @media screen and (max-width: 600px) {
+        overflow-y: hidden;
+        height: 200vh;
+    }
   }
 }
 
