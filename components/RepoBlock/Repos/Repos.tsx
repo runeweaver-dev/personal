@@ -1,4 +1,4 @@
-import useGitFetch from '../../services/useGitFetch';
+import useGitFetch from '../../../services/useGitFetch';
 import Repo from '../Repo/Repo';
 import styles from './Repos.module.scss';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import useCommitFetch from '../../services/useCommitFetch';
+import useCommitFetch from '../../../services/useCommitFetch';
 import Commit from '../Commit/Commit';
 import styles from './CommitData.module.scss';
 
