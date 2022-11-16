@@ -1,8 +1,0 @@
-@import '../../styles/mixins';
-
-.Repos {
-    max-height: 100%;
-  > h2 {
-      @include small-title;
-  }
-}

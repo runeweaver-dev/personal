@@ -1,0 +1,74 @@
+@import '../../../styles/mixins';
+@import '../../../styles/fonts';
+
+$intro-image-size: 300px;
+$backing-size: $intro-image-size / 3.5;
+
+.Intro {
+
+    width: 50%;
+
+    @media screen and (max-width: 600px) {
+        height: 100vh;
+        width: 100%;
+    }
+
+    > h2 {
+        @include small-title;
+    }
+
+    .introCard {
+        @include whitepanel;
+        padding: ($padding-factor * 6) ($padding-factor * 4);
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        overflow: hidden;
+
+        @media screen and (max-width: 600px) {
+            height: 90%;
+            flex-direction: column-reverse;
+        }
+
+        .introText {
+            h1 {
+                font-family: $handwritten-heading; 
+            }
+        }
+
+        .imageContainer {
+            
+            position: relative;
+            width: $intro-image-size;
+            height: $intro-image-size;
+
+            .profileImage {
+                width: $intro-image-size;
+                height: $intro-image-size;
+                object-fit: cover;
+                object-position: 50% 0%;
+                border-radius: 50%;
+                position: absolute;
+            }
+
+            div.pinkBacking {
+                @include img-backing($pink);
+                right: $backing-size;
+                top: $backing-size;
+            }
+
+            div.blueBacking {
+                @include img-backing($blue);
+                left: $backing-size;
+                bottom: $backing-size;
+            }
+
+            @media screen and (max-width: 600px){
+                width: $intro-image-size * 0.666;
+                height: $intro-image-size * 0.666;
+            }
+        }
+    }
+}
