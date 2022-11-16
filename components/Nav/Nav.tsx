@@ -29,15 +29,15 @@ function Nav() {
             <nav>
                 <ul>
                     <li>
-                        <Link href="/about" style={linkStyles}><a {...linkProperties}>About</a></Link>
+                        <Link href="/about" style={linkStyles} {...linkProperties}>About</Link>
                     </li>
                     <li>
-                        <Link href="/blog" style={linkStyles}><a {...linkProperties}>Blog</a></Link>
+                        <Link href="/blog" style={linkStyles} {...linkProperties}>Blog</Link>
                     </li>
                 </ul>
             </nav>
         </div>
-    )
+    );
 }
 
 export default Nav;

@@ -10,7 +10,7 @@ function NameSection(){
     return (
         <div className={styles.NameSection}>
             <Link href="/" style={linkStyles}>
-            <a>Cameron Raw</a>
+            Cameron Raw
             </Link>
             <div className={styles.colorLine}></div>
             <h2 className="role">Full-Stack Developer</h2>
