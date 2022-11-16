@@ -32,6 +32,10 @@
         width: 80%;
         background-color: $pink;
         z-index: 10;
+
+        @media screen and (min-width: 426px){
+            display: none;
+        }
     }
 
     h2 {
