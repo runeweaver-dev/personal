@@ -23,6 +23,10 @@
             font-size: 1rem;
             letter-spacing: 0.50rem;
             text-align: center;
+
+            @media screen and (min-width: 426px) and (max-width: 1000px){
+                font-size: 0.75rem;
+            }
         }
     }
 }

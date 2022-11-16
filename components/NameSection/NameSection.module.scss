@@ -17,6 +17,7 @@
     width: 100%;
     
     a {
+        $header-font-size: 3;
         font-family: $handwritten-heading;
         font-size: 3rem;
         margin: 0;
@@ -25,6 +26,11 @@
         text-decoration: none;
         color: black;
         font-weight: 700;
+
+        @media screen and (min-width: 426px) and (max-width: 1000px){
+            font-size: #{$header-font-size * 0.75}rem;
+            margin-top: 5%;
+        }
     }
 
     .colorLine {
