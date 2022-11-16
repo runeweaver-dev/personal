@@ -1,4 +1,4 @@
-import Intro from '../Intro/Intro';
+import Intro from './Intro/Intro';
 import Repos from '../RepoBlock/Repos/Repos';
 
 import styles from './Home.module.scss';

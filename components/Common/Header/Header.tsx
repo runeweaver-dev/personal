@@ -1,5 +1,5 @@
-import InnerHeader from '../InnerHeader/InnerHeader';
-import NameSection from '../NameSection/NameSection';
+import InnerHeader from './InnerHeader/InnerHeader';
+import NameSection from '../../NameSection/NameSection';
 import styles from './Header.module.scss';
 
 function Header(){

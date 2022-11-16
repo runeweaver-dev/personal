@@ -1,4 +1,4 @@
-import Nav from '../Nav/Nav';
+import Nav from '../Menu/Nav/Nav';
 import styles from './InnerHeader.module.scss';
 
 function InnerHeader(){
