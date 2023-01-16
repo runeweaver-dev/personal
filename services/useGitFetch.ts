@@ -9,6 +9,11 @@ function useGitFetch() {
 
         async function getGithubData() {
 
+            if(process.env.NEXT_PUBLIC_DISABLE_GIT_COMPONENT){
+                setError("Disabled for local env");
+                return;
+            }
+
             let cachedData = localStorage.getItem("repoData");
 
             if (cachedData) {
@@ -30,9 +35,9 @@ function useGitFetch() {
                 setRepos(json);
                 createCacheRepoData(json);
             } catch (e) {
-                setError(e)
+                setError(e);
             } finally {
-                setLoading(false)
+                setLoading(false);
             }
         }
 
