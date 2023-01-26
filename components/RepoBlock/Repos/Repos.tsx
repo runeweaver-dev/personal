@@ -16,7 +16,7 @@ function Repos(){
 
   return (
     <div className={styles.Repos}>
-      <h2>Projects</h2>
+      <h2>Public Projects</h2>
       {repos.map((repo) => (
         <Repo repoData={repo} />
       ))}
