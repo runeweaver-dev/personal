@@ -1,4 +1,3 @@
-@import '../../styles/fonts.scss';
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
@@ -18,7 +17,6 @@
     
     a {
         $header-font-size: 3;
-        font-family: $handwritten-heading;
         font-size: 3rem;
         margin: 0;
         position: relative;

@@ -9,8 +9,6 @@ function useGitFetch() {
 
         async function getGithubData() {
 
-            console.log(process.env.NEXT_PUBLIC_DISABLE_GIT_COMPONENT);
-
             if(process.env.NEXT_PUBLIC_DISABLE_GIT_COMPONENT == "true"){
                 setError("Disabled for local env");
                 return;
