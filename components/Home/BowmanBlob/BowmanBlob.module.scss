@@ -4,6 +4,10 @@
     width: 100%;
     height: 100%;
     opacity: .5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .BowmanBlob {
     fill: #F72585;

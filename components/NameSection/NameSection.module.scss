@@ -37,6 +37,23 @@
         background-color: $pink;
         z-index: 10;
 
+    }
+
+    .bowmanBlob {
+        width: 100%;
+        height: 50%;
+        opacity: 0.5;
+        z-index: -20;
+        position: absolute; 
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .colorLine, 
+    .bowmanBlob {
         @media screen and (min-width: 426px){
             display: none;
         }

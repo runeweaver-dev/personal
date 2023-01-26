@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from './NameSection.module.scss';
 import { Montserrat } from '@next/font/google';
+import BowmanBlob from '../Home/BowmanBlob/BowmanBlob';
 
 const montserrat = Montserrat({
     subsets: ['latin']
@@ -9,6 +10,9 @@ const montserrat = Montserrat({
 function NameSection(){
     return (
         <div className={`${styles.NameSection} ${montserrat.className}`}>
+            <div className={styles.bowmanBlob}>
+                <BowmanBlob />
+            </div>
             <Link href="/">
             Cameron Raw
             </Link>
