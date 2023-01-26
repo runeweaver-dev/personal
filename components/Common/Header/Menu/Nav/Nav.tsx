@@ -9,7 +9,7 @@ function mouseEnterAnimation(e: React.MouseEvent) {
 
 function mouseLeaveAnimation(e: React.MouseEvent) {
     const thisLi = e.target as HTMLAnchorElement;
-    thisLi.style.color = "black";
+    thisLi.style.color = "white";
 }
 
 const linkProperties = {
@@ -19,7 +19,7 @@ const linkProperties = {
 
 const linkStyles = {
     textDecoration: "none",
-    color: "black"
+    color: "white"
 }
 
 function Nav() {

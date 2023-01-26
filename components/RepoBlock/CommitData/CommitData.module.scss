@@ -1,8 +1,8 @@
 @import '../../../styles/variables.scss';
 
 .CommitData {
-  border: 2px solid rgb(240, 240, 240);
-  border-radius: 15px;
+  border: 1px solid $cyan;
+  border-radius: 5px;
   padding: $padding-factor;
   position: relative;
 
@@ -11,10 +11,13 @@
     top: 0;
     font-size: 0.5rem;
     transform: translateY(-50%);
-    background-color: white;
+    background-color: $cyan;
+    border-radius: 5px;
+    // background-color: rgb(37,37,37);
     margin: 0;
     padding: 5px;
     text-transform: uppercase;
     letter-spacing: 2.5px;   left: 2.5%;
+    color: rgb(37,37,37);
   }
 }
