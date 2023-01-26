@@ -1,5 +1,4 @@
 @import '../../../../styles/variables.scss';
-@import '../../../../styles/fonts.scss';
 
 .InnerHeader {
     display: flex;
@@ -19,7 +18,6 @@
 
         h2 {
             text-transform: uppercase;
-            font-family: $main-font;
             font-size: 1rem;
             letter-spacing: 0.50rem;
             text-align: center;

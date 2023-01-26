@@ -1,5 +1,4 @@
 @import '../../../styles/variables.scss';
-@import '../../../styles/fonts.scss';
 @import '../../../styles/mixins';
 
 .Repo {
@@ -8,7 +7,6 @@
   border: 3px solid rgb(55,55,55);
 
   h3 {
-    font-family: $handwritten-heading;
     color: white;
     margin: 0 auto $padding-factor / 2;
     font-size: 1.5rem;

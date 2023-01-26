@@ -1,5 +1,4 @@
 @import '../../../styles/mixins';
-@import '../../../styles/fonts';
 
 $intro-image-size: 300px;
 $backing-size: $intro-image-size / 3.5;
@@ -36,14 +35,7 @@ $backing-size: $intro-image-size / 3.5;
             flex-direction: column-reverse;
         }
 
-        .introText {
-
-            color: white;
-
-            h1 {
-                font-family: $handwritten-heading; 
-            }
-        }
+        .introText { color: white; }
 
         .imageContainer {
             

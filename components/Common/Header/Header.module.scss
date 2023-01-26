@@ -1,5 +1,4 @@
 @import '../../../styles/variables.scss';
-@import '../../../styles/fonts.scss';
 
 .Header {
     height: 15%;
@@ -22,7 +21,6 @@
         align-items: center;
 
         p {
-            font-family: $main-font;
             text-transform: uppercase;
             letter-spacing: 0.5rem;
             font-size: 0.75rem;
