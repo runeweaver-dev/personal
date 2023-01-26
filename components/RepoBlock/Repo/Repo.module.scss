@@ -2,7 +2,9 @@
 @import '../../../styles/mixins';
 
 .Repo {
-    @include whitepanel;
+  @include whitepanel;
+  background-color: rgb(37,37,37);
+  border: 3px solid rgb(55,55,55);
 
   h3 {
     color: white;
@@ -26,6 +28,7 @@
     > p {
       margin-top: 0;
       font-style: italic;
+      color: rgb(200,200,200);
     }
   }
 

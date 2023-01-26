@@ -14,17 +14,21 @@ $backing-size: $intro-image-size / 3.5;
 
     > h2 {
         @include small-title;
+        color: white;
     }
 
     .introCard {
         @include whitepanel;
         padding: ($padding-factor * 6) ($padding-factor * 4);
+        background-color: black;
 
         display: flex;
         justify-content: space-around;
         align-items: center;
 
         overflow: hidden;
+
+        border: solid 1px $cyan;
 
         @media screen and (max-width: 600px) {
             height: 90%;
@@ -46,18 +50,6 @@ $backing-size: $intro-image-size / 3.5;
                 object-position: 50% 0%;
                 border-radius: 50%;
                 position: absolute;
-            }
-
-            div.pinkBacking {
-                @include img-backing($pink);
-                right: $backing-size;
-                top: $backing-size;
-            }
-
-            div.blueBacking {
-                @include img-backing($blue);
-                left: $backing-size;
-                bottom: $backing-size;
             }
 
             @media screen and (max-width: 600px){

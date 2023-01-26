@@ -7,7 +7,7 @@ function Repos(){
   let { repos, loading, error } = useGitFetch();
 
   if(error){
-      return (<h1>Repos could not be loaded</h1>);
+      return (<h1>{error}</h1>);
   }
 
   if(loading){

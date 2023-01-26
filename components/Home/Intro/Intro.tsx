@@ -11,9 +11,7 @@ function Intro() {
                     <p>I'm a fullstack developer, currently based in Barcelona, Spain. </p>
                 </div>
                 <div className={styles.imageContainer}>
-                    <Image className={styles.profileImage} src="/img/solsiden.jpeg" height={300} width={300} />
-                    <div className={styles.pinkBacking}></div>
-                    <div className={styles.blueBacking}></div>
+                    <Image className={styles.profileImage} src="/img/solsiden.jpeg" height={300} width={300} alt={'A picture of Cameron Raw, a full-stack Web Developer.'} />
                 </div>
             </div>
         </div>

@@ -1,15 +1,15 @@
 import Link from 'next/link';
 import styles from './NameSection.module.scss';
+import { Montserrat } from '@next/font/google';
 
-const linkStyles = {
-    textDecoration: "none",
-    color: "black"
-}
+const montserrat = Montserrat({
+    subsets: ['latin']
+});
 
 function NameSection(){
     return (
-        <div className={styles.NameSection}>
-            <Link href="/" style={linkStyles}>
+        <div className={`${styles.NameSection} ${montserrat.className}`}>
+            <Link href="/">
             Cameron Raw
             </Link>
             <div className={styles.colorLine}></div>

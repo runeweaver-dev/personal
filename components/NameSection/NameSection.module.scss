@@ -1,10 +1,9 @@
-@import '../../styles/fonts.scss';
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
 .NameSection {
     display: flex;
-    
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -18,14 +17,13 @@
     
     a {
         $header-font-size: 3;
-        font-family: $handwritten-heading;
         font-size: 3rem;
         margin: 0;
         position: relative;
         z-index: 10;
         text-decoration: none;
-        color: black;
         font-weight: 700;
+        color: white;
 
         @media screen and (min-width: 426px) and (max-width: 1000px){
             font-size: #{$header-font-size * 0.75}rem;
