@@ -4,19 +4,17 @@
   height: 100%;
 
   .bodyContainer {
-    background-image: url('../public/img/barcelona.jpg');
-    background-color: $purple;
+    // background: linear-gradient(rgb(50,50,50), $purple);
+    // background-color: rgb(50,50,50);
+    background: linear-gradient(rgb(50,50,50), $mauve);
     background-size: cover;
     background-position: center;
 
-    height: 80%;
+    height: 90%;
 
     @media screen and (max-width: 600px) {
         overflow-y: hidden;
         height: 200vh;
     }
   }
-}
-
-.mobile {
 }

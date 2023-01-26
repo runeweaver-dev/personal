@@ -3,10 +3,13 @@
 @import '../../../styles/mixins';
 
 .Repo {
-    @include whitepanel;
+  @include whitepanel;
+  background-color: rgb(37,37,37);
+  border: 3px solid rgb(55,55,55);
 
   h3 {
     font-family: $handwritten-heading;
+    color: white;
     margin: 0 auto $padding-factor / 2;
     font-size: 1.5rem;
   }
@@ -27,6 +30,7 @@
     > p {
       margin-top: 0;
       font-style: italic;
+      color: rgb(200,200,200);
     }
   }
 
