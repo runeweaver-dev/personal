@@ -1,6 +1,6 @@
 import React from 'react';
-import useCommitFetch from '../../../services/useCommitFetch';
-import Commit from '../Commit/Commit';
+import useCommitFetch from '@/services/useCommitFetch';
+import Commit from '@/components/RepoBlock/Commit/Commit';
 import styles from './CommitData.module.scss';
 
 function CommitData({ repoName } : { repoName: string }){

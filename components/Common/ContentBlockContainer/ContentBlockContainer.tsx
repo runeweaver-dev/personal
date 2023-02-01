@@ -1,5 +1,4 @@
-import react from 'react';
-import ContentBlock, { IContentBlockProps } from '../ContentBlock/ContentBlock';
+import ContentBlock, { IContentBlockProps } from '@/components/Common/ContentBlock/ContentBlock';
 import './ContentBlockContainer.scss';
 
 export default function ContentBlockContainer(props: IContentBlockContainerProps){

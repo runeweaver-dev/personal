@@ -1,4 +1,3 @@
-import react from 'react';
 import './Menu.scss';
 import Nav from './Nav/Nav';
 

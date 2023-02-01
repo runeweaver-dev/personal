@@ -1,5 +1,5 @@
 import React from 'react';
-import CommitData from '../CommitData/CommitData';
+import CommitData from '@/components/RepoBlock/CommitData/CommitData';
 import styles from './Repo.module.scss';
 import { Montserrat } from '@next/font/google';
 

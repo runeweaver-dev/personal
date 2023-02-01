@@ -1,4 +1,3 @@
-import react from 'react';
 import './ContentBlock.scss';
 
 function ContentBlock(props: IContentBlockProps){

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from './NameSection.module.scss';
 import { Montserrat } from '@next/font/google';
-import BowmanBlob from '../Home/BowmanBlob/BowmanBlob';
+import BowmanBlob from '@/components/Home/BowmanBlob/BowmanBlob';
 
 const montserrat = Montserrat({
     subsets: ['latin']

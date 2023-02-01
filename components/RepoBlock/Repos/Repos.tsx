@@ -1,8 +1,8 @@
-import useGitFetch from '../../../services/useGitFetch';
-import Repo from '../Repo/Repo';
+import useGitFetch from '@/services/useGitFetch';
+import Repo from '@/components/RepoBlock/Repo/Repo';
 import styles from './Repos.module.scss';
 
-function Repos(){
+function Repos() {
   
   let { repos, loading, error } = useGitFetch();
 

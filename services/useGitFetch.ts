@@ -30,7 +30,7 @@ function useGitFetch() {
             }
             
             try {
-                const response = await fetch(`api/getRepoData/3`);
+                const response = await fetch(`api/get-repo-data/3`);
                 const json = await response.json();
                 setRepos(json);
                 createCacheRepoData(json);
