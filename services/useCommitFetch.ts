@@ -9,7 +9,7 @@ function useCommitFetch(repo: string){
   useEffect(() => {
     async function getGithubData(repo: string){
       try {
-        const response = await fetch(`https://api.github.com/repos/cameronraw/${repo}/commits`);         
+        const response = await fetch(`/api/get-commit-data/${repo}`);         
         const json = await response.json();
         setCommits(json);
       }catch(e){
