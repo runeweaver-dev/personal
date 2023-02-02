@@ -1,15 +1,14 @@
 import Intro from './Intro/Intro';
-import Repos from '@/components/RepoBlock/Repos/Repos';
-
 import styles from './Home.module.scss';
 import BowmanBlob from './BowmanBlob/BowmanBlob';
+import PublicProjects from '../RepoBlock/PublicProjects/PublicProjects';
 
 function Home(){
     return (
         <div className={styles.Home}>
             <BowmanBlob />
             <Intro />
-            <Repos />
+            <PublicProjects />
         </div>
     )
 }

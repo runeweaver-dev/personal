@@ -1,6 +1,5 @@
 import useGitFetch from '@/services/useGitFetch';
 import Repo from '@/components/RepoBlock/Repo/Repo';
-import styles from './Repos.module.scss';
 
 function Repos() {
   
@@ -15,12 +14,11 @@ function Repos() {
   }
 
   return (
-    <div className={styles.Repos}>
-      <h2>Public Projects</h2>
+    <>
       {repos.map((repo) => (
         <Repo repoData={repo} />
       ))}
-    </div>
+    </>
   )
 }
 

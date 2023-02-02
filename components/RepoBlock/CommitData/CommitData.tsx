@@ -1,21 +1,12 @@
 import React from 'react';
-import useCommitFetch from '@/services/useCommitFetch';
 import Commit from '@/components/RepoBlock/Commit/Commit';
 import styles from './CommitData.module.scss';
 
-function CommitData({ repoName } : { repoName: string }){
+function CommitData({ commitData }){
 
-  let { commits, loading, error } = useCommitFetch(repoName);
+    console.log(commitData)
 
-  if(error){
-    return (<div>Commits unavailable</div>)
-  }
-
-  if(loading){
-    return (<div>Loading...</div>)
-  }
-
-  commits = commits.slice(0, 3);
+  const commits = commitData.slice(0, 3);
 
   return (<div className={styles.CommitData}>
       <p className={styles.recentCommits}>Recent Commits</p>
