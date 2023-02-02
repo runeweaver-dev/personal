@@ -1,5 +1,6 @@
 import useGitFetch from '@/services/useGitFetch';
 import Repo from '@/components/RepoBlock/Repo/Repo';
+import LoadingSpinner from '@/components/Common/LoadingSpinner/LoadingSpinner';
 
 function Repos() {
   
@@ -10,7 +11,7 @@ function Repos() {
   }
 
   if(loading){
-      return (<h1>Loading..</h1>);
+      return (<LoadingSpinner />);
   }
 
   return (
